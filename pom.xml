@@ -99,13 +99,13 @@
 	    <repository>
 	      <id>anilnexus</id>
 	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://3.109.206.235:8081/repository/firstproject-releses/</url>
+	      <url>http://15.206.210.87:8081/repository/3edprojectrelases-dev/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>anilnexus</id>
 	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://3.109.206.235:8081/repository/firstproject-snapshot/</url>
+	      <url>http://15.206.210.87:8081/repository/3edproject-dev/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
