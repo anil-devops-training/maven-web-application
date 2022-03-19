@@ -95,15 +95,15 @@
 	<distributionManagement>
 	
 	    <repository>
-	      <id>nexus</id>
+	      <id>anilnexus</id>
 	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://54.255.174.111:8081/repository/flipkart-release/</url>
+	      <url>http://52.66.240.201:8081/repository/4thprojectreleases-master/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
-	      <id>nexus</id>
+	      <id>anilnexus</id>
 	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://54.255.174.111:8081/repository/flipkart-snapshot/</url>
+	      <url>http://52.66.240.201:8081/repository/4thprojectsnapshot-master/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
