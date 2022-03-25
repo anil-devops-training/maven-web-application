@@ -14,7 +14,7 @@ sh "$mavenhome/bin/mvn clean package"
 
 //soranqube report
 stage('sonarqube report'){
-sh "&mavenhome/bin/mvn sonar:sonar"
+sh "$mavenhome/bin/mvn sonar:sonar"
 }
 
 //send to artifact to nexus
