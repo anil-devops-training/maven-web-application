@@ -21,7 +21,7 @@
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-		<sonar.host.url>http://43.204.28.56:9000/</sonar.host.url>
+		<sonar.host.url>http://52.66.136.80:9000/</sonar.host.url>
                 <sonar.login>e82a2383d60e20503e522dadaf59cc33fe155cf0</sonar.login>
 		
                 <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -98,13 +98,13 @@
 	    <repository>
 	      <id>anilnexus</id>
 	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://13.126.104.53:8081/repository/pipelinedicrarativeway-releses/</url>
+	      <url>http://52.66.253.139:8081/repository/pipelineproject1-release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>anilnexus</id>
 	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://13.126.104.53:8081/repository/pipelinedicrarativeway-snapshot/</url>
+	      <url>http://52.66.253.139:8081/repository/pipelineproject1-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
