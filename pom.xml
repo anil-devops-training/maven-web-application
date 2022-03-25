@@ -98,13 +98,13 @@
 	    <repository>
 	      <id>anilnexus</id>
 	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://15.206.174.27:8081/repository/pipelineproject1-release/</url>
+	      <url>http://13.126.104.53:8081/repository/pipelinedicrarativeway-releses/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>anilnexus</id>
 	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://15.206.174.27:8081/repository/pipelineproject1-snapshot/</url>
+	      <url>http://13.126.104.53:8081/repository/pipelinedicrarativeway-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
