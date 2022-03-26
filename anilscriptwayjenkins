@@ -1,0 +1,35 @@
+node{
+    
+def mavenhome = tool name: "maven3.8.5"
+
+//checking code
+stage('checking code'){
+git branch: 'development', credentialsId: '83c404e6-551a-4d4d-878b-2e28b01e0b3f', url: 'https://github.com/anil-devops-training/maven-web-application.git'
+}
+
+
+
+
+//build 
+stage('build'){
+sh "$mavenhome/bin/mvn clean package"
+}
+
+//creating sonarqube report
+stage('creating sonarqube report'){
+    sh "$mavenhome/bin/mvn sonar:sonar"
+}
+
+// updating artifact in to nexus
+stage('updating artifact in to naxus'){
+sh "$mavenhome/bin/mvn deploy"    
+}
+
+//uploading artifact into tomcat
+stage('uploading artifact into tomcat'){
+sshagent(['2b790511-739d-4954-becf-eeebf134cd92']){
+ sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@3.111.168.108:/opt/apache-tomcat-9.0.59/webapps"
+}
+}
+
+} //nodeclosing
