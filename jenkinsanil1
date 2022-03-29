@@ -1,0 +1,58 @@
+pipeline{
+    
+agent any
+
+tools{
+maven "maven3.8.5"
+}
+
+options {
+  buildDiscarder logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')
+  timestamps()
+}
+
+
+   
+stages{
+    
+//checking code
+stage('checking code'){
+steps{
+git branch: 'development', credentialsId: '83c404e6-551a-4d4d-878b-2e28b01e0b3f', url: 'https://github.com/anil-devops-training/maven-web-application.git'
+}
+    
+}
+    
+//build
+stage('build'){
+steps{
+sh "mvn clean package"         
+}   
+}
+    
+//sonarqube report
+stage('sonarqube report'){
+steps{
+sh "mvn sonar:sonar"
+}    
+}
+    
+//updating artifct into nexus
+stage('updating artifct into nexus'){
+steps{
+sh "mvn deploy" 
+}    
+}
+        
+//update artifact into tomcat 
+stage('update artifact into tomcat'){
+steps{
+ sshagent(['2b790511-739d-4954-becf-eeebf134cd92']){
+sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@35.154.56.59:/opt/apache-tomcat-9.0.59/webapps"
+   
+}    
+}
+}    
+   
+}//stages closing
+}//pipeline closing
