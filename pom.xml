@@ -98,7 +98,7 @@
 	    <repository>
 	      <id>anilnexus</id>
 	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <urlhttp://35.154.24.83:8081/repository/samplereleses/></url>
+	      <url>http://35.154.24.83:8081/repository/samplereleses/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
