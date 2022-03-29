@@ -98,13 +98,13 @@
 	    <repository>
 	      <id>anilnexus</id>
 	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://35.154.24.83:8081/repository/hellore/</url>
+	      <urlhttp://35.154.24.83:8081/repository/samplereleses/></url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>anilnexus</id>
 	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://35.154.24.83:8081/repository/hello/</url>
+	      <url>http://35.154.24.83:8081/repository/samplesnapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
