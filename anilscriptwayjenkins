@@ -63,7 +63,6 @@ sshagent(['2b790511-739d-4954-becf-eeebf134cd92']){
 }
 }
 */
-
 }//try block closing
 catch(e){
 currentBuild.result = "FAILED"
@@ -71,7 +70,4 @@ currentBuild.result = "FAILED"
 finally{
 sendSlackNotifications(currentBuild.result)
 }
-
-
-
 } //nodeclosing
