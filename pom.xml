@@ -98,13 +98,13 @@
 	    <repository>
 	      <id>anilnexus</id>
 	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://35.154.24.83:8081/repository/samplereleses/</url>
+	      <url>http://52.66.248.51:8081/repository/mpr/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>anilnexus</id>
 	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://35.154.24.83:8081/repository/samplesnapshot/</url>
+	      <url>http://52.66.248.51:8081/repository/mp/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
