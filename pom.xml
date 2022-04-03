@@ -98,13 +98,13 @@
 	    <repository>
 	      <id>anilnexus</id>
 	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://13.233.131.167:8081/repository/screleses/</url>
+	      <url>http://13.233.131.167:8081/repository/sreleses/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>anilnexus</id>
 	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://13.233.131.167:8081/repository/scsnapshot/</url>
+	      <url>http://13.233.131.167:8081/repository/ssnapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
