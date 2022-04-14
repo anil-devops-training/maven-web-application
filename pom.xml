@@ -97,13 +97,13 @@
 	    <repository>
 	      <id>anilnexus</id>
 	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://13.233.255.157:8081/repository/thersdayreleses/</url>
+	      <url>http://15.206.195.210:8081/repository/thersdayreleses/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>anilnexus</id>
 	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://13.233.255.157:8081/repository/thersdaysnapshot/</url>
+	      <url>http://15.206.195.210:8081/repository/thersdaysnapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
